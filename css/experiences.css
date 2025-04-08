@@ -1,0 +1,41 @@
+.divExp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: #FEBB5F;
+    padding: 70px 100px 70px 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+
+}
+
+h1 {
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+}
+
+
+.exp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+
+}
+
+.blocexp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+section {
+    padding: 100px;
+}
+
+.divExp {
+    flex-direction: column-reverse;
+}

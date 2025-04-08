@@ -17,8 +17,16 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-style: italic;
+}
+
+h4 {
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: normal;
+    font-style: italic;
+
 }
 
 a {
@@ -53,6 +61,10 @@ footer a:hover {
     border-radius: 30px;
 }
 
+nav a:first-child{
+    text-decoration: underline;
+
+}
 
 nav div a {
     margin: 30px;
@@ -78,5 +90,3 @@ li {
 ul {
     margin-top: 20px;
 }
-
-
