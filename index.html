@@ -4,13 +4,6 @@
     <meta charset="utf-8" />
     <title>Accueil</title>
     <link href="css/style.css" rel="stylesheet" />
-    
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    
-
   </head>
   <body>
     <!-- En-tête -->
@@ -18,10 +11,10 @@
       <nav>
         <h2 id="titrePage">Accueil</h2>
         <div>
-          <a id="navAccueil" href="index.html">Accueil</a>
-          <a id="navCompetences" href="competences.html" >Compétences</a>
-          <a id="navExperiences" href="experiences.html" >Expériences</a>
-          <a id="navContact" href="contact.html" >Contact</a>
+          <a id="navAccueil" class="butNav" href="index.html">Accueil</a>
+          <a id="navCompetences"  class="butNav" href="competences.html">Compétences</a>
+          <a id="navExperiences"  class="butNav" href="experiences.html">Expériences</a>
+          <a id="navContact"  class="butNav" href="contact.html">Contact</a>
         </div>
       </nav>
     </header>
@@ -30,7 +23,7 @@
       <section class="css-sectionIndex1">
         <img src="images/moi.jpg" alt="Photo de moi" id="imgmoi" />
 
-        <div>
+        <div class="divInfo">
           <h1>Mathéo MOIRON</h1>
           <h3>Étudiant</h3>
 
@@ -40,13 +33,13 @@
             sinon)
           </p>
 
-          <a href="" onclick="goToApropos()" class="aBoutton">A propos</a>
+          <button class="aBoutton" id="aBoutton">A propos</button>
         </div>
       </section>
 
       <!-- Parcours et photos -->
       <section id="a-propos" class="css-sectionIndex2">
-        <div class="parcours">
+        <div class="parcours" id="a-propos-div">
           <h2>Formations</h2>
           <ul>
             <li>
@@ -70,8 +63,16 @@
           </ul>
         </div>
         <div class="imagesParcours">
-          <img src="images/iut.png" alt="photo iut" class="imgParcours" />
-          <img src="images/lycee.jpeg" alt="photo lycee" class="imgParcours" />
+          <img
+            src="images/iut.png"
+            alt="photo iut"
+            class="imgParcours"
+          />
+          <img
+            src="images/lycee.jpeg"
+            alt="photo lycee"
+            class="imgParcours"
+          />
         </div>
       </section>
 
@@ -86,7 +87,7 @@
             class="imgLoisirs"
           />
         </div>
-        <div class="loisirs">
+        <div class="loisirs divLoisirs">
           <h2>Loisirs</h2>
           <ul>
             <li>Gymnastique (8 ans en club)</li>
@@ -101,7 +102,12 @@
       <a href="contact.html">Contact</a>
     </footer>
 
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/Draggable.min.js"></script>
+
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/script.js" ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
