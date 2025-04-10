@@ -3,6 +3,21 @@ function onLoad() {
     console.log('Processus de chargement du document terminé…');
     const titleDoc = document.title;
     navMenu(titleDoc);
+
+    $(".imgMenu").on("click",function(){
+        if ($(".navDiva").hasClass("menu-ouvert")) {
+            $(".navDiva").removeClass("menu-ouvert");
+        } else {
+            $(".navDiva").addClass("menu-ouvert");
+        }
+    })
+
+    $("section").on("click",function(){
+        if ($(".navDiva").hasClass("menu-ouvert")) {
+            $(".navDiva").removeClass("menu-ouvert");
+        } 
+    })
+
 }
 
 
@@ -41,7 +56,7 @@ function competences() {
         yoyo: true,
         scrollTrigger: {
             trigger: ".css-sectionComp2",
-            toggleActions: "restart pause reverse none",
+            toggleActions: "play pause reverse pause",
             start: "center center"
         }
     });
@@ -58,14 +73,14 @@ function accueil() {
     $("#navAccueil").css("text-decoration", "underline");
 
     //rotation photo moi
-    gsap.set("#imgmoi", { x: -250 });
+    gsap.set("#imgmoi", { x: -75 });
     gsap.to("#imgmoi", {
         rotation: 360,
         duration: 1,
         x: 0
     })
     //rotation info moi
-    gsap.set(".divInfo", { x: 250 });
+    gsap.set(".divInfo", { x: 75 });
     gsap.to(".divInfo", {
         rotation: 360,
         x: 0,
@@ -92,8 +107,8 @@ function accueil() {
         duration: 1,
         scrollTrigger: {
             trigger: "#a-propos",
-            toggleActions: "restart pause reverse none",
-            start: "top center",
+            toggleActions: "play pause none none",
+            start: "top bottom",
 
         }
     });
@@ -106,8 +121,8 @@ function accueil() {
         duration: 1,
         scrollTrigger: {
             trigger: "#a-propos",
-            toggleActions: "restart none none none",
-            start: "top center",
+            toggleActions: "play none none none",
+            start: "top bottom",
 
         }
     });
@@ -119,7 +134,7 @@ function accueil() {
         duration: 1,
         scrollTrigger: {
             trigger: ".css-sectionIndex3",
-            toggleActions: "restart none none none",
+            toggleActions: "play none none none",
             start: "top bottom",
 
         }
@@ -140,7 +155,7 @@ function accueil() {
         duration: 2,
         scrollTrigger: {
             trigger: ".css-sectionIndex3",
-            toggleActions: "restart none none none",
+            toggleActions: "play none none none",
             start: "top bottom",
 
         }
@@ -152,7 +167,7 @@ function accueil() {
         duration: 1,
         scrollTrigger: {
             trigger: "#a-propos",
-            toggleActions: "restart none reverse none",
+            toggleActions: "play none reverse none",
             start: "top center",
             end: "+=0px"
         }
@@ -189,9 +204,9 @@ function afficherCompetencesJQuery() {
             const $progressBar = $(this).find(".progressBar");  //$(this) element courant 
             const $pourcentageElem = $(this).find(".pourcentage");
 
-            $nomLangage.css("display", "block");
-            $progressBar.css("display", "flex");
-            $pourcentageElem.css("display", "block");
+            $nomLangage.css("visibility", "visible");
+            $progressBar.css("visibility", "visible");
+            $pourcentageElem.css("visibility", "visible");
 
             const valeurFinale = parseInt($pourcentageElem.text());
             let valeurActuelle = 0;

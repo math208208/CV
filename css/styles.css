@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Underdog&display=swap");
+/*Toutes les pages*/
+* {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+main {
+  background-color: #f7f7f7;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: normal;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+
+/*Bar navigation (toutes les pages)*/
+header {
+  background-color: #febb5f;
+  padding: 30px 50px;
+  border-bottom: 3px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 8;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav a,
+footer a {
+  padding: 10px;
+}
+
+nav a:hover,
+footer a:hover {
+  background-color: #fe9d15;
+  border-radius: 30px;
+}
+
+nav a:first-child {
+  text-decoration: underline;
+}
+
+nav div a {
+  margin: 30px;
+}
+
+p {
+  width: 100%;
+}
+
+/*Footer (toutes les pages)*/
+footer {
+  background-color: #febb5f;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  border-top: 3px solid black;
+}
+
+li {
+  font-size: 1.1em;
+  padding: 15px;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+/*index*/
+.aBoutton {
+  padding: 15px;
+  background-color: #2dbdb4;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.aBoutton:hover {
+  background-color: #c0f0ee;
+}
+
+#imgmoi {
+  height: 35%;
+  width: 35%;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.495);
+  border-radius: 20px;
+}
+
+.lienLinkedin {
+  height: 10%;
+  width: 8%;
+}
+
+#logolindkin {
+  height: 100%;
+  width: 100%;
+}
+
+.italic {
+  color: rgb(105, 105, 105);
+}
+
+.parcours {
+  padding-left: 50px;
+}
+
+.loisirs {
+  padding-right: 150px;
+}
+
+.imgLoisirs {
+  height: 30%;
+  position: absolute;
+  border-radius: 20px;
+}
+
+.imgParcours {
+  border-radius: 20px;
+  position: absolute;
+}
+
+.imgParcours:nth-child(1) {
+  right: 7%;
+  margin-top: 4em;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.495);
+}
+
+.imgParcours:nth-child(2) {
+  right: 29%;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.495);
+}
+
+.imgLoisirs:nth-child(3) {
+  left: 45%;
+  z-index: 3;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.495);
+}
+
+.imgLoisirs:nth-child(2) {
+  left: 33%;
+  margin-top: 50px;
+  z-index: 2;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.495);
+}
+
+.imgLoisirs:nth-child(2):hover {
+  z-index: 4;
+}
+
+.imgLoisirs:nth-child(1) {
+  z-index: 3;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.495);
+}
+
+.css-sectionIndex1 {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+  margin: auto;
+  padding: 150px;
+}
+
+.css-sectionIndex1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 45%;
+}
+
+.css-sectionIndex2 {
+  background-color: #febb5f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 30px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.css-sectionIndex3 {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px 50px;
+}
+
+/*experiences*/
+.divExp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: #febb5f;
+  padding: 70px 100px 70px 100px;
+  border-radius: 50px;
+  border: 3px solid black;
+  flex-direction: column-reverse;
+}
+
+.exp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.blocexp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.h2Experience {
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+.sectionExperience {
+  padding: 100px;
+}
+
+/*contact*/
+.h2Contact {
+  padding-bottom: 30px;
+}
+
+.sectionContact {
+  padding: 70px;
+}
+
+/*competences*/
+.langage {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.progressBar {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 200px;
+  width: 20px;
+  background-color: #c0f0ee;
+  display: flex;
+  flex-direction: column-reverse;
+  visibility: hidden;
+}
+
+.pourcentage {
+  visibility: hidden;
+  text-align: center;
+}
+
+.nomLangage {
+  visibility: hidden;
+}
+
+.css-sectionComp1 {
+  background-color: #f7f7f7;
+  padding: 50px 50px;
+}
+
+.css-sectionComp2 {
+  background-color: #febb5f;
+  padding: 75px;
+  margin: 70px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.progressBar div {
+  width: 100%;
+  background-color: #2dbdb4;
+  animation-duration: 2s;
+  animation-name: progressup;
+}
+
+/*gestion progress bar */
+#java {
+  height: 80%;
+}
+
+#python {
+  height: 70%;
+}
+
+#htmlcss {
+  height: 70%;
+}
+
+#plsql {
+  height: 60%;
+}
+
+#js {
+  height: 50%;
+}
+
+#php {
+  height: 60%;
+}
+
+#c {
+  height: 50%;
+}
+
+@keyframes progressup {
+  from {
+    height: 0%;
+  }
+}
+.zoneOutils {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px;
+  gap: 50px;
+}
+
+.outil h3 {
+  margin-bottom: 15px;
+}
+
+.outil {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.outilImage {
+  width: 30%;
+  border-radius: 20px;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.495);
+}
+
+.outilImage:hover {
+  width: 33%;
+}
+
+.zoneLangues {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.zoneLangues p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.langue {
+  background-color: #2dbdb4;
+  box-shadow: 7px 5px 5px rgba(192, 240, 238, 0.9490196078);
+  padding: 40px;
+  border-radius: 100%;
+}
+
+.zoneLangages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.titreSection {
+  padding-bottom: 40px;
+  padding-left: 50px;
+}
+
+.css-sectionComp3 {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 50px;
+}
+
+.imgMenu {
+  background-color: #febb5f;
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  nav {
+    flex-direction: column;
+  }
+  nav h2 {
+    padding: 15px;
+  }
+  nav .navDiva {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  nav .navDiva a {
+    position: sticky;
+    top: 0;
+    z-index: 8;
+  }
+  nav .menu-ouvert {
+    max-height: 500px;
+  }
+  .navMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navMenu .imgMenu {
+    display: block;
+    width: 13%;
+    height: 13%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .css-sectionIndex1 {
+    flex-direction: column;
+    padding: 25px;
+    justify-content: space-between;
+  }
+  .css-sectionIndex1 #imgmoi {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .css-sectionIndex1 .divInfo {
+    width: 100%;
+  }
+  .css-sectionIndex1 .divInfo h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .css-sectionIndex1 .divInfo h3 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .css-sectionIndex1 .divInfo p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .css-sectionIndex1 .divInfo button {
+    background-color: #fe9d15;
+  }
+  .css-sectionIndex2 {
+    padding: 15px;
+  }
+  .css-sectionIndex2 h2 {
+    text-align: center;
+  }
+  .css-sectionIndex2 .parcours {
+    padding: 20px;
+    margin: auto;
+  }
+  .css-sectionIndex2 .imgParcours {
+    display: none;
+  }
+  .css-sectionIndex3 {
+    padding: 40px;
+  }
+  .css-sectionIndex3 h2 {
+    text-align: center;
+  }
+  .css-sectionIndex3 .imagesLoisirs {
+    display: none;
+  }
+  .css-sectionIndex3 .loisirs {
+    padding: 0;
+    margin: auto;
+  }
+  .titreSection {
+    text-align: center;
+    padding-left: 0px;
+  }
+  .css-sectionComp1 {
+    padding: 25px;
+  }
+  .css-sectionComp1 .zoneLangages {
+    flex-direction: column;
+  }
+  .css-sectionComp1 .zoneLangages .langage {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .css-sectionComp1 .zoneLangages .langage p {
+    width: auto;
+  }
+  .css-sectionComp1 .zoneLangages .langage .progressBar {
+    background-color: #febb5f;
+    height: 20px;
+    width: 125px;
+  }
+  .css-sectionComp1 .zoneLangages .langage .progressBar #java {
+    width: 80%;
+    height: 100%;
+  }
+  .css-sectionComp1 .zoneLangages .langage .progressBar #python {
+    width: 70%;
+    height: 100%;
+  }
+  .css-sectionComp1 .zoneLangages .langage .progressBar #htmlcss {
+    width: 70%;
+    height: 100%;
+  }
+  .css-sectionComp1 .zoneLangages .langage .progressBar #plsql {
+    width: 60%;
+    height: 100%;
+  }
+  .css-sectionComp1 .zoneLangages .langage .progressBar #js {
+    width: 50%;
+    height: 100%;
+  }
+  .css-sectionComp1 .zoneLangages .langage .progressBar #php {
+    width: 60%;
+    height: 100%;
+  }
+  .css-sectionComp1 .zoneLangages .langage .progressBar #c {
+    width: 50%;
+    height: 100%;
+  }
+  .css-sectionComp1 .zoneLangages .langage .progressBar div {
+    background-color: #fe9d15;
+  }
+  @keyframes progressup {
+    from {
+      width: 0%;
+    }
+  }
+  .css-sectionComp1 .zoneLangages .langage .nomLangage {
+    width: 20%;
+  }
+  .css-sectionComp2 {
+    margin: 25px;
+    padding: 25px;
+  }
+  .css-sectionComp2 .zoneOutils {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 20px;
+  }
+  .css-sectionComp2 .zoneOutils .outil {
+    justify-content: space-around;
+  }
+  .css-sectionComp2 .zoneOutils .outil h3 {
+    font-size: 1.1em;
+  }
+  .css-sectionComp2 .zoneOutils .outil .outilImage {
+    width: 20%;
+  }
+  .css-sectionComp3 .zoneLangues {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .css-sectionComp3 .zoneLangues .langue {
+    width: 40%;
+    background-color: #fe9d15;
+    margin-bottom: 30px;
+  }
+  .css-sectionComp3 .zoneLangues .langue h3 {
+    text-align: center;
+  }
+  .sectionExperience {
+    padding: 25px;
+  }
+  .sectionExperience h2 {
+    padding: 20px;
+    text-align: center;
+  }
+  .sectionExperience .divExp {
+    padding: 20px;
+  }
+  .sectionExperience .divExp .exp {
+    flex-direction: column-reverse;
+    margin: 15px;
+  }
+  .sectionExperience .divExp .exp ul {
+    margin-bottom: 25px;
+  }
+  .sectionExperience .divExp .exp em {
+    margin-bottom: 10px;
+  }
+  header,
+  footer,
+  .css-sectionIndex2,
+  .css-sectionComp2,
+  .divExp,
+  .imgMenu {
+    background-color: #2dbdb4;
+  }
+}/*# sourceMappingURL=styles.css.map */
