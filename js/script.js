@@ -17,7 +17,6 @@ function onLoad() {
             $(".navDiva").removeClass("menu-ouvert");
         } 
     })
-
 }
 
 
