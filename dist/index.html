@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="bundle.js"></script>
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- En-tête -->
+    <header>
+      <nav>
+        <div class="navMenu">
+          <h2 id="titrePage">Accueil</h2>
+          <img id="idmenu" class="imgMenu" />
+        </div>
+        <div class="navDiva">
+          <a id="navAccueil" class="butNav" href="index.html">Accueil</a>
+          <a id="navCompetences" class="butNav" href="competences.html"
+            >Compétences</a
+          >
+          <a id="navExperiences" class="butNav" href="experiences.html"
+            >Expériences</a
+          >
+          <a id="navContact" class="butNav" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- photo moi et description -->
+      <section class="sectionIndex1">
+        <img id="imgmoi" alt="Photo de moi" />
+
+        <div class="divInfo">
+          <h1>Mathéo MOIRON</h1>
+          <h3>Étudiant</h3>
+
+          <p>
+            Je sais pas encore quoi mettre la mais au moins un truc du genre
+            mathéo 20 ans de Nice (a faire evoluer en fonction de la recherche
+            sinon)
+          </p>
+
+          <button class="aBoutton" id="aBoutton">A propos</button>
+        </div>
+      </section>
+
+      <!-- Parcours et photos -->
+      <section id="a-propos" class="sectionIndex2">
+        <div class="parcours" id="a-propos-div">
+          <h2>Formations</h2>
+          <ul>
+            <li>
+              <em class="italic">2023</em>, Baccalauréat général
+              <b>(Mention Bien)</b>,<br />
+              (Spécialité NSI, Maths et SES),
+              <em class="italic">Lycée Jacques Amyot, Auxerre (89)</em>
+            </li>
+
+            <li>
+              <em class="italic">2023-2024</em>, 1 année de BUT Informatique,<br />
+              <em class="italic">IUT Nice (06), UNICA</em>
+            </li>
+
+            <li>
+              <em class="italic">2024-2025</em>, 2 année de BUT Informatique
+              <br />
+              (Parcours réalisation d'applications ...),
+              <em class="italic">IUT Nice (06), UNICA</em>
+            </li>
+          </ul>
+        </div>
+        <div class="imagesParcours">
+          <img id="idiut" alt="photo iut" class="imgParcours" />
+          <img id="idlycee" alt="photo lycee" class="imgParcours" />
+        </div>
+      </section>
+
+      <!-- Loisirs et photos -->
+      <section class="sectionIndex3">
+        <div class="imagesLoisirs">
+          <img id="idgym" alt="photo gym" class="imgLoisirs" />
+          <img id="idter" alt="photo 47ter" class="imgLoisirs" />
+          <img id="idminecraft" alt="Photo minecraft" class="imgLoisirs" />
+        </div>
+        <div class="loisirs divLoisirs">
+          <h2>Loisirs</h2>
+          <ul>
+            <li>Gymnastique (8 ans en club)</li>
+            <li>Jeux vidéo</li>
+            <li>Cuisine</li>
+            <li>Musique</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="contact.html">Contact</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+footer {
+    background-color: $color-primaire;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    border-top: 3px solid black;
+    a {
+        padding: 10px;
+        &:hover {
+            background-color: $color-terciaire;
+            border-radius: 30px;
+        }
+    }
+}

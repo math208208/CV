@@ -1,0 +1,606 @@
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/css/styles.scss ***!
+  \*********************************************************************************************************************/
+@font-face {
+  font-family: "Quicksand";
+  src: url(assets/fonts/Quicksand-VariableFont_wght.ttf) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  background-color: #febb5f;
+  padding: 30px 50px;
+  border-bottom: 3px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 8;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav .imgMenu {
+  background-color: #febb5f;
+  display: none;
+}
+header nav a {
+  padding: 10px;
+  margin: 30px;
+}
+header nav a:hover {
+  background-color: #fe9d15;
+  border-radius: 30px;
+}
+
+footer {
+  background-color: #febb5f;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  border-top: 3px solid black;
+}
+footer a {
+  padding: 10px;
+}
+footer a:hover {
+  background-color: #fe9d15;
+  border-radius: 30px;
+}
+
+* {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+main {
+  background-color: #f7f7f7;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: normal;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+
+p {
+  width: 100%;
+}
+
+li {
+  font-size: 1.1em;
+  padding: 15px;
+}
+
+ul {
+  margin-top: 20px;
+}
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/css/index.scss ***!
+  \********************************************************************************************************************/
+@font-face {
+  font-family: "Quicksand";
+  src: url(assets/fonts/Quicksand-VariableFont_wght.ttf) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.italic {
+  color: rgb(105, 105, 105);
+}
+
+.sectionIndex1 {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+  margin: auto;
+  padding: 150px;
+}
+.sectionIndex1 #imgmoi {
+  height: 35%;
+  width: 35%;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.495);
+  border-radius: 20px;
+}
+.sectionIndex1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 45%;
+}
+.sectionIndex1 div .aBoutton {
+  padding: 15px;
+  background-color: #2dbdb4;
+  border-radius: 30px;
+  text-align: center;
+  width: 60%;
+  margin: 0px auto;
+}
+.sectionIndex1 div .aBoutton:hover {
+  background-color: #c0f0ee;
+}
+
+.sectionIndex2 {
+  background-color: #febb5f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 30px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+.sectionIndex2 .parcours {
+  padding-left: 50px;
+}
+.sectionIndex2 .imgParcours {
+  border-radius: 20px;
+  position: absolute;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.495);
+}
+.sectionIndex2 .imgParcours:nth-child(1) {
+  right: 7%;
+  margin-top: 4em;
+}
+.sectionIndex2 .imgParcours:nth-child(2) {
+  right: 29%;
+}
+
+.sectionIndex3 {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px 50px;
+}
+.sectionIndex3 .imgLoisirs {
+  height: 30%;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.495);
+}
+.sectionIndex3 .imgLoisirs:nth-child(3) {
+  left: 45%;
+  z-index: 3;
+}
+.sectionIndex3 .imgLoisirs:nth-child(2) {
+  left: 33%;
+  margin-top: 50px;
+  z-index: 2;
+}
+.sectionIndex3 .imgLoisirs:nth-child(2) :hover {
+  z-index: 4;
+}
+.sectionIndex3 .imgLoisirs:nth-child(1) {
+  z-index: 3;
+}
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/css/contact.scss ***!
+  \**********************************************************************************************************************/
+@font-face {
+  font-family: "Quicksand";
+  src: url(assets/fonts/Quicksand-VariableFont_wght.ttf) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.sectionContact {
+  padding: 70px;
+}
+.sectionContact .h2Contact {
+  padding-bottom: 30px;
+}
+/*!**************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/css/experiences.scss ***!
+  \**************************************************************************************************************************/
+@font-face {
+  font-family: "Quicksand";
+  src: url(assets/fonts/Quicksand-VariableFont_wght.ttf) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.sectionExperience {
+  padding: 100px;
+}
+.sectionExperience .h2Experience {
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+.sectionExperience .divExp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: #febb5f;
+  padding: 70px 100px 70px 100px;
+  border-radius: 50px;
+  border: 3px solid black;
+  flex-direction: column-reverse;
+}
+.sectionExperience .divExp .exp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px;
+}
+.sectionExperience .divExp .exp .blocexp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/*!**************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/css/competences.scss ***!
+  \**************************************************************************************************************************/
+@font-face {
+  font-family: "Quicksand";
+  src: url(assets/fonts/Quicksand-VariableFont_wght.ttf) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.css-sectionComp1 {
+  background-color: #f7f7f7;
+  padding: 50px 50px;
+}
+.css-sectionComp1 .titreSection {
+  padding-bottom: 40px;
+  padding-left: 50px;
+}
+.css-sectionComp1 .langages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.css-sectionComp1 .langages__langage {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+.css-sectionComp1 .langages__titre {
+  visibility: hidden;
+}
+.css-sectionComp1 .langages__progress {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 200px;
+  width: 20px;
+  background-color: #c0f0ee;
+  display: flex;
+  flex-direction: column-reverse;
+  visibility: hidden;
+}
+.css-sectionComp1 .langages__progress--bar {
+  width: 100%;
+  background-color: #2dbdb4;
+  animation-duration: 2s;
+  animation-name: progressup;
+}
+.css-sectionComp1 .langages__progress #java {
+  height: 80%;
+}
+.css-sectionComp1 .langages__progress #python {
+  height: 70%;
+}
+.css-sectionComp1 .langages__progress #htmlcss {
+  height: 70%;
+}
+.css-sectionComp1 .langages__progress #plsql {
+  height: 60%;
+}
+.css-sectionComp1 .langages__progress #js {
+  height: 50%;
+}
+.css-sectionComp1 .langages__progress #php {
+  height: 60%;
+}
+.css-sectionComp1 .langages__progress #c {
+  height: 50%;
+}
+.css-sectionComp1 .langages__pourcentage {
+  visibility: hidden;
+  text-align: center;
+}
+
+@keyframes progressup {
+  from {
+    height: 0%;
+  }
+}
+.css-sectionComp2 {
+  background-color: #febb5f;
+  padding: 75px;
+  margin: 70px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+.css-sectionComp2 h2 {
+  margin-bottom: 35px;
+}
+.css-sectionComp2 .zoneOutils {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px;
+  gap: 50px;
+}
+.css-sectionComp2 .zoneOutils .outil {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.css-sectionComp2 .zoneOutils .outil h3 {
+  margin-bottom: 15px;
+}
+.css-sectionComp2 .zoneOutils .outil .outilImage {
+  width: 30%;
+  border-radius: 20px;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.495);
+}
+.css-sectionComp2 .zoneOutils .outil .outilImage :hover {
+  width: 33%;
+}
+
+.css-sectionComp3 {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 50px;
+}
+.css-sectionComp3 .zoneLangues {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.css-sectionComp3 .zoneLangues .langue {
+  background-color: #2dbdb4;
+  box-shadow: 7px 5px 5px rgba(192, 240, 238, 0.9490196078);
+  padding: 40px;
+  border-radius: 100%;
+}
+.css-sectionComp3 .zoneLangues .langue p {
+  text-align: center;
+  margin-top: 10px;
+}
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/css/responsive.scss ***!
+  \*************************************************************************************************************************/
+@font-face {
+  font-family: "Quicksand";
+  src: url(assets/fonts/Quicksand-VariableFont_wght.ttf) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@media (max-width: 1023px) {
+  header {
+    padding: 0;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav .navMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav .navMenu .imgMenu {
+    display: block;
+    width: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #2dbdb4;
+  }
+  header nav h2 {
+    padding: 15px;
+    font-size: 1.3em;
+  }
+  header nav .navDiva {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  header nav .navDiva a {
+    position: sticky;
+    top: 0;
+    z-index: 8;
+    padding: auto;
+    margin: auto;
+  }
+  header nav .menu-ouvert {
+    max-height: 500px;
+  }
+  .sectionIndex1 {
+    flex-direction: column;
+    padding: 25px;
+    justify-content: space-between;
+  }
+  .sectionIndex1 #imgmoi {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .sectionIndex1 .divInfo {
+    width: 100%;
+  }
+  .sectionIndex1 .divInfo h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .sectionIndex1 .divInfo h3 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .sectionIndex1 .divInfo p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sectionIndex1 .divInfo button {
+    background-color: #fe9d15;
+  }
+  .sectionIndex2 {
+    padding: 15px;
+  }
+  .sectionIndex2 h2 {
+    text-align: center;
+  }
+  .sectionIndex2 .parcours {
+    padding: 20px;
+    margin: auto;
+  }
+  .sectionIndex2 .imgParcours {
+    display: none;
+  }
+  .sectionIndex3 {
+    padding: 40px;
+  }
+  .sectionIndex3 h2 {
+    text-align: center;
+  }
+  .sectionIndex3 .imagesLoisirs {
+    display: none;
+  }
+  .sectionIndex3 .loisirs {
+    padding: 0;
+    margin: auto;
+  }
+  .titreSection {
+    text-align: center;
+    padding-left: 0px;
+  }
+  .css-sectionComp1 {
+    padding: 25px;
+  }
+  .css-sectionComp1 .langages {
+    flex-direction: column;
+  }
+  .css-sectionComp1 .langages__langage {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .css-sectionComp1 .langages__titre {
+    width: 20%;
+  }
+  .css-sectionComp1 .langages__progress {
+    background-color: #febb5f;
+    height: 20px;
+    width: 125px;
+  }
+  .css-sectionComp1 .langages__progress--bar {
+    height: 100% !important;
+    background-color: #fe9d15;
+  }
+  .css-sectionComp1 .langages__progress #java {
+    width: 80%;
+  }
+  .css-sectionComp1 .langages__progress #python {
+    width: 70%;
+  }
+  .css-sectionComp1 .langages__progress #htmlcss {
+    width: 70%;
+  }
+  .css-sectionComp1 .langages__progress #plsql {
+    width: 60%;
+  }
+  .css-sectionComp1 .langages__progress #js {
+    width: 50%;
+  }
+  .css-sectionComp1 .langages__progress #php {
+    width: 60%;
+  }
+  .css-sectionComp1 .langages__progress #c {
+    width: 50%;
+  }
+  @keyframes progressup {
+    from {
+      width: 0%;
+    }
+  }
+  .css-sectionComp1 .langages__pourcentage {
+    width: auto;
+  }
+  .css-sectionComp2 {
+    margin: 25px;
+    padding: 25px;
+  }
+  .css-sectionComp2 .zoneOutils {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 20px;
+  }
+  .css-sectionComp2 .zoneOutils .outil {
+    justify-content: space-around;
+  }
+  .css-sectionComp2 .zoneOutils .outil h3 {
+    font-size: 1.1em;
+  }
+  .css-sectionComp2 .zoneOutils .outil .outilImage {
+    width: 20%;
+  }
+  .css-sectionComp3 .zoneLangues {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .css-sectionComp3 .zoneLangues .langue {
+    width: 40%;
+    background-color: #fe9d15;
+    margin-bottom: 30px;
+  }
+  .css-sectionComp3 .zoneLangues .langue h3 {
+    text-align: center;
+  }
+  .sectionExperience {
+    padding: 25px;
+  }
+  .sectionExperience h2 {
+    padding: 20px;
+    text-align: center;
+  }
+  .sectionExperience .divExp {
+    padding: 20px;
+  }
+  .sectionExperience .divExp .exp {
+    flex-direction: column-reverse;
+    margin: 15px;
+  }
+  .sectionExperience .divExp .exp ul {
+    margin-bottom: 25px;
+  }
+  .sectionExperience .divExp .exp em {
+    margin-bottom: 10px;
+  }
+  header,
+  footer,
+  .sectionIndex2,
+  .css-sectionComp2,
+  .divExp {
+    background-color: #2dbdb4;
+  }
+}

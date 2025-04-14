@@ -1,0 +1,15 @@
+$color-primaire: #ff9036;
+$color-terciaire: #ff9f3e;
+$color-secondaire: #2dbdb4;
+$shadow: rgba(0, 0, 0, 0.495);
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand-VariableFont_wght.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin boxshadow {
+    box-shadow: 7px 5px 5px $shadow;
+}

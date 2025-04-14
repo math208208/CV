@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+header {
+    background-color: $color-primaire;
+    padding: 30px 50px;
+    border-bottom: 3px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 8;
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .imgMenu {
+            background-color: $color-primaire;
+            display: none;
+        }
+        a {
+            padding: 10px;
+            margin: 30px;
+            &:hover {
+                background-color: $color-terciaire;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
