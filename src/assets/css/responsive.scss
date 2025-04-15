@@ -1,16 +1,13 @@
 @use "variables" as *;
 
-
-
 @media (max-width: 1023px) {
-
     //header
-    header{
+    header {
         padding: 0;
 
         nav {
             display: flex;
-    
+
             flex-direction: column;
             .navMenu {
                 display: flex;
@@ -27,8 +24,9 @@
             h2 {
                 padding: 15px;
                 font-size: 1.3em;
+                
             }
-    
+
             .navDiva {
                 display: flex;
                 flex-direction: column;
@@ -42,16 +40,16 @@
                     z-index: 8;
                     padding: auto;
                     margin: auto;
+                    margin-bottom: 10px;
+
                 }
             }
-    
+
             .menu-ouvert {
                 max-height: 500px;
             }
         }
-
     }
-    
 
     //index
     .sectionIndex1 {
@@ -112,7 +110,6 @@
         }
     }
 
-
     //competences
     .titreSection {
         text-align: center;
@@ -135,17 +132,16 @@
             }
 
             &__progress {
-                background-color: $color-primaire;
+                background-color: rgba(255, 155, 55, 0.652);
                 height: 20px;
                 width: 125px;
-                &--bar{
+                &--bar {
                     height: 100% !important; //demander a juju vu que je set height grace a id pour desk ba prblm lors du height global
                     //autre solution mettre height a tout les id
-                    background-color: $color-terciaire;
+                    background-color: $color-primaire;
                 }
                 #java {
                     width: 80%;
-                    
                 }
                 #python {
                     width: 70%;
@@ -177,10 +173,6 @@
             &__pourcentage {
                 width: auto;
             }
-
-                
-                
-            
         }
     }
 
@@ -225,16 +217,25 @@
     .sectionExperience {
         padding: 25px;
 
-        h2 {
+        .h2Experience {
             padding: 20px;
             text-align: center;
+            margin:10px;
+            &Uni{
+                margin-top: 30px;
+            }
+            
         }
-
+        
         .divExp {
-            padding: 20px;
+
             .exp {
                 flex-direction: column-reverse;
                 margin: 15px;
+                padding: 20px 20px;
+                box-sizing: initial;
+                justify-content: space-evenly;
+                
                 ul {
                     margin-bottom: 25px;
                 }

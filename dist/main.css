@@ -8,7 +8,7 @@
   font-style: normal;
 }
 header {
-  background-color: #febb5f;
+  background-color: #ff9036;
   padding: 30px 50px;
   border-bottom: 3px solid black;
   position: sticky;
@@ -21,20 +21,40 @@ header nav {
   justify-content: space-between;
 }
 header nav .imgMenu {
-  background-color: #febb5f;
+  background-color: #ff9036;
   display: none;
 }
 header nav a {
-  padding: 10px;
   margin: 30px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+header nav a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #2dbdb4;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s;
 }
 header nav a:hover {
-  background-color: #fe9d15;
-  border-radius: 30px;
+  color: #2dbdb4;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+header nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
 }
 
 footer {
-  background-color: #febb5f;
+  background-color: #ff9036;
   padding: 20px 50px;
   display: flex;
   flex-direction: row;
@@ -45,7 +65,7 @@ footer a {
   padding: 10px;
 }
 footer a:hover {
-  background-color: #fe9d15;
+  background-color: #ff9f3e;
   border-radius: 30px;
 }
 
@@ -142,7 +162,7 @@ ul {
 }
 
 .sectionIndex2 {
-  background-color: #febb5f;
+  background-color: #ff9036;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -213,6 +233,7 @@ ul {
 /*!**************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/css/experiences.scss ***!
   \**************************************************************************************************************************/
+@charset "UTF-8";
 @font-face {
   font-family: "Quicksand";
   src: url(assets/fonts/Quicksand-VariableFont_wght.ttf) format("woff2");
@@ -220,28 +241,36 @@ ul {
   font-style: normal;
 }
 .sectionExperience {
-  padding: 100px;
+  overflow: hidden;
 }
 .sectionExperience .h2Experience {
-  padding-bottom: 50px;
-  padding-left: 50px;
+  margin-top: 50px;
+  text-align: center;
 }
 .sectionExperience .divExp {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 30px;
-  background-color: #febb5f;
-  padding: 70px 100px 70px 100px;
-  border-radius: 50px;
-  border: 3px solid black;
-  flex-direction: column-reverse;
+  background-color: rgba(247, 247, 247, 0.968627451);
+  padding: 70px 0;
+  width: 100%;
+}
+.sectionExperience .divExpUni {
+  margin-bottom: 100px;
 }
 .sectionExperience .divExp .exp {
+  margin: 0 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 50px;
+  justify-content: space-around;
+  border-radius: 20px;
+  border: 3px solid black;
+  width: 100%;
+  flex: 0 0 80%;
+  min-width: 0; /* Empêche le débordement */
+  padding: 70px 20px;
+  box-sizing: border-box;
+  background-color: #ff9036;
 }
 .sectionExperience .divExp .exp .blocexp {
   display: flex;
@@ -327,7 +356,7 @@ ul {
   }
 }
 .css-sectionComp2 {
-  background-color: #febb5f;
+  background-color: #ff9036;
   padding: 75px;
   margin: 70px;
   border: 3px solid black;
@@ -355,9 +384,6 @@ ul {
   width: 30%;
   border-radius: 20px;
   box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.495);
-}
-.css-sectionComp2 .zoneOutils .outil .outilImage :hover {
-  width: 33%;
 }
 
 .css-sectionComp3 {
@@ -431,6 +457,7 @@ ul {
     z-index: 8;
     padding: auto;
     margin: auto;
+    margin-bottom: 10px;
   }
   header nav .menu-ouvert {
     max-height: 500px;
@@ -461,7 +488,7 @@ ul {
     margin-bottom: 20px;
   }
   .sectionIndex1 .divInfo button {
-    background-color: #fe9d15;
+    background-color: #ff9f3e;
   }
   .sectionIndex2 {
     padding: 15px;
@@ -508,13 +535,13 @@ ul {
     width: 20%;
   }
   .css-sectionComp1 .langages__progress {
-    background-color: #febb5f;
+    background-color: rgba(255, 155, 55, 0.652);
     height: 20px;
     width: 125px;
   }
   .css-sectionComp1 .langages__progress--bar {
     height: 100% !important;
-    background-color: #fe9d15;
+    background-color: #ff9036;
   }
   .css-sectionComp1 .langages__progress #java {
     width: 80%;
@@ -570,7 +597,7 @@ ul {
   }
   .css-sectionComp3 .zoneLangues .langue {
     width: 40%;
-    background-color: #fe9d15;
+    background-color: #ff9f3e;
     margin-bottom: 30px;
   }
   .css-sectionComp3 .zoneLangues .langue h3 {
@@ -579,16 +606,20 @@ ul {
   .sectionExperience {
     padding: 25px;
   }
-  .sectionExperience h2 {
+  .sectionExperience .h2Experience {
     padding: 20px;
     text-align: center;
+    margin: 10px;
   }
-  .sectionExperience .divExp {
-    padding: 20px;
+  .sectionExperience .h2ExperienceUni {
+    margin-top: 30px;
   }
   .sectionExperience .divExp .exp {
     flex-direction: column-reverse;
     margin: 15px;
+    padding: 20px 20px;
+    box-sizing: initial;
+    justify-content: space-evenly;
   }
   .sectionExperience .divExp .exp ul {
     margin-bottom: 25px;

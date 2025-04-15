@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import $, { timers } from 'jquery';
 import { gsap } from 'gsap';
 import { Draggable } from "gsap/Draggable";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -18,6 +18,7 @@ import git from "../images/git.png";
 import intelliJ from "../images/intelliJ.jpg";
 import phpmyadmin from "../images/phpmyadmin.png";
 import vscode from "../images/vscode.png";
+import croix from "../images/fermer.webp";
 
 gsap.registerPlugin(Draggable);
 gsap.registerPlugin(ScrollToPlugin);
@@ -43,14 +44,39 @@ window.addEventListener('load', () => {
     $(".imgMenu").on("click", function () {
         if ($(".navDiva").hasClass("menu-ouvert")) {
             $(".navDiva").removeClass("menu-ouvert");
+
+            gsap.to(".imgMenu", {
+                opacity: 0,
+                duration: 0.2,
+
+                onComplete: function () {
+                    $(".imgMenu").attr("src", menu);
+                    gsap.to(".imgMenu",
+                        { opacity: 1, rotation: 0, duration: 0.5, ease: "power2.out" },
+                    );
+                }
+            });
         } else {
             $(".navDiva").addClass("menu-ouvert");
+
+            gsap.to(".imgMenu", {
+                opacity: 0,
+                duration: 0.2,
+
+                onComplete: function () {
+                    $(".imgMenu").attr("src", croix);
+                    gsap.to(".imgMenu",
+                        { opacity: 1, rotation: 360, duration: 0.5, ease: "power2.out" },
+                    );
+                }
+            });
         }
-    })
+    });
 
     $("section").on("click", function () {
         if ($(".navDiva").hasClass("menu-ouvert")) {
             $(".navDiva").removeClass("menu-ouvert");
+            $(".imgMenu").attr("src", menu);
         }
     })
 });
@@ -303,17 +329,50 @@ function experiences() {
     $("#navExperiences").css("text-decoration", "underline");
     $("#navAccueil").css("text-decoration", "none");
 
-
-
-    gsap.to(".divExp", {
-        scrollTrigger: {
-            scrub: true,
-            trigger: ".sectionExperience",
-            pin: true,
-            start: "top top",
-        },
-        ease: "none"
+    gsap.set(".sectionExperiencePro", { opacity: 0 });
+    gsap.to(".sectionExperiencePro", {
+        opacity: 1,
+        duration: 1.2,
     });
+    let expPro = gsap.utils.toArray(".expPro");
+
+    let endValue1 = window.innerWidth < 768 ? "+=200" :
+        window.innerWidth < 1024 ? "+=300" :
+            "+=400";
+
+    gsap.to(expPro, {
+        xPercent: -100 * 1.2 * (expPro.length - 1),
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".sectionExperiencePro",
+            pin: true,
+            scrub: 1,
+            snap: 1 / (expPro.length - 1),
+            end: endValue1,
+            start: "top top",
+        }
+    });
+
+    let endValue2 = window.innerWidth < 768 ? "+=800" :
+        window.innerWidth < 1024 ? "+=1700" :
+            "+=2800";
+    let expUni = gsap.utils.toArray(".expUni");
+
+    gsap.to(expUni, {
+        xPercent: -100 * 1.15 * (expUni.length - 1),
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".sectionExperienceUni",
+            pin: true,
+            scrub: 1,
+            snap: 1 / (expUni.length - 1),
+            end: endValue2,
+            start: "top top",
+        }
+    });
+
+
+
 
 }
 
