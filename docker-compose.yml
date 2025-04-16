@@ -1,0 +1,55 @@
+services:
+  # Service PHP 8.2
+  php:
+    image: php:8.2-fpm
+    volumes:
+      - ./:/var/www/html:z
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+
+  # Serveur web (Nginx)
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html:z
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:z
+    depends_on:
+      - php
+    networks:
+      - app-network
+
+  # Service MySQL
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: app_db
+      MYSQL_USER: app_user
+      MYSQL_PASSWORD: app_password
+      MYSQL_ROOT_PASSWORD: root_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - app-network
+
+  # Service Node.js avec npm
+  node:
+    image: node:latest
+    volumes:
+      - ./:/app:z
+    working_dir: /app
+    command: tail -f /dev/null
+    networks:
+      - app-network
+
+volumes:
+  mysql_data:
+
+networks:
+  app-network:
+    driver: bridge

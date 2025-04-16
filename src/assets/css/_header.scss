@@ -15,6 +15,10 @@ header {
             background-color: $color-primaire;
             display: none;
         }
+
+        .underline{
+            text-decoration:underline;
+        }
         a {
             margin: 30px;
             position: relative;
@@ -37,9 +41,8 @@ header {
 
             &:hover {
                 color:  $color-secondaire;
-                //font-size: 1.3em;
                 font-weight: bold;
-                text-decoration: none !important;
+                text-decoration: none ;
             }
 
 

@@ -8,10 +8,34 @@ footer {
     justify-content: right;
     border-top: 3px solid black;
     a {
-        padding: 10px;
+        margin: 10px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: $color-secondaire;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.5s;
+        }
+
         &:hover {
-            background-color: $color-terciaire;
-            border-radius: 30px;
+            color: $color-secondaire;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: center;
         }
     }
 }

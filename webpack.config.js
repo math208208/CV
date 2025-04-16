@@ -12,16 +12,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'), //dossier de sortie
     clean: true,
   },
-  //serv de dev
-  devServer: {
-    static: path.resolve(__dirname, 'dist'),
-    port: 3001,
-    open: {
-      app: {
-        name: 'google-chrome'
-      }
-    }
-  },
   module: {
     rules: [
       {
@@ -78,18 +68,23 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/html/index.html',
       filename: 'index.html',
+      inject: false
+
     }),
     new HtmlWebpackPlugin({
       template: './src/html/contact.html',
       filename: 'contact.html',
+      inject: false
     }),
     new HtmlWebpackPlugin({
       template: './src/html/experiences.html',
       filename: 'experiences.html',
+      inject: false
     }),
     new HtmlWebpackPlugin({
       template: './src/html/competences.html',
       filename: 'competences.html',
+      inject: false
     }),
   ],
   mode: 'development',

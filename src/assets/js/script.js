@@ -136,10 +136,9 @@ function chargerImgContact() {
 
 
 
-
 function competences() {
-    $("#navCompetences").css("text-decoration", "underline");
-    $("#navAccueil").css("text-decoration", "none");
+    $("#navCompetences").addClass("underline");
+    $("#navAccueil").removeClass("underline");
 
     afficherCompetencesJQuery();
 
@@ -208,7 +207,7 @@ function competences() {
 
 
 function accueil() {
-    $("#navAccueil").css("text-decoration", "underline");
+    $("#navAccueil").addClass("underline");
 
     //rotation photo moi
     gsap.set("#imgmoi", { x: -200 });
@@ -326,8 +325,9 @@ function accueil() {
 
 
 function experiences() {
-    $("#navExperiences").css("text-decoration", "underline");
-    $("#navAccueil").css("text-decoration", "none");
+    
+    $("#navExperiences").addClass("underline");
+    $("#navAccueil").removeClass("underline");
 
     gsap.set(".sectionExperiencePro", { opacity: 0 });
     gsap.to(".sectionExperiencePro", {
@@ -377,8 +377,8 @@ function experiences() {
 }
 
 function contact() {
-    $("#navContact").css("text-decoration", "underline");
-    $("#navAccueil").css("text-decoration", "none");
+    $("#navContact").addClass("underline");
+    $("#navAccueil").removeClass("underline");
 }
 
 
